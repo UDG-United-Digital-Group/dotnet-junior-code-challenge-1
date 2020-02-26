@@ -1,0 +1,60 @@
+@{
+    
+}
+
+<style type="text/css">
+    div.button-group {
+        display: flex;
+        min-height: 200px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-5">
+        <h4 class="text-center">Available Data</h4>
+        <div id="data-container-left">
+
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="button-group">
+            <!-- Implement click function here to transport data from left to right -->
+            <button type="button" class="btn btn-outline-dark">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- Implement click function here to transport data from right to left -->
+            <button type="button" class="btn btn-outline-dark">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <h4 class="text-center">Selected Data</h4>
+        <div id="data-container-right">
+
+        </div>
+    </div>
+</div>
+
+
+@section Scripts { 
+    <!-- Use this to render the tree views -->
+    <script type="text/javascript">
+        $(function () {
+            $('#data-container-left').jstree({
+                'core': {
+                    'data': [] // Place data for left tree view here
+                }
+            });
+
+            $('#data-container-right').jstree({
+                'core': {
+                    'data': [] // Place data for right tree view here
+                }
+            });
+        });
+    </script>    
+}

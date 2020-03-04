@@ -2,7 +2,7 @@
 
 In einer WebApp soll eine TreeView Komponente implementiert werden. Die Komponente soll hierarchisch aufgebaute Daten direkt im Frontend anzeigen mit Hilfe der Library [jsTree](https://www.jstree.com/docs).
 
-Es exisitert bereits ein [Service](Services/DataService.cs), um Testdaten abrufen zu können. Der [Service](Services/DataService.cs) liefert die Daten in einer flachen Hierarchie, es besteht noch eine Child-Parent Realationship. Alle zurückgelieferten Daten sind Instanzen der Klasse [DataModel](Models/DataModel.cs) verwendet.
+Es exisitert bereits ein [Service](Services/DataService.cs), um Testdaten abrufen zu können. Der [Service](Services/DataService.cs) liefert die Daten in einer flachen Hierarchie, es besteht keine Child-Parent Realationship. Alle zurückgelieferten Daten sind Instanzen der Klasse [DataModel](Models/DataModel.cs).
 
 ## 1. Zielsetzung
 
@@ -28,7 +28,7 @@ Das Design / Layout existiert bereits.
 
 ## 3. Implementierung
 
-Die Implementierung muss anahnd der unter 1. Zielsetzung erforderlichen Punkte erfolgen.
+Die Implementierung muss anhand der unter 1. Zielsetzung erforderlichen Punkte erfolgen.
 
 Der [DataService](Services/DataService.cs) soll nur um die benötigten Funktionen erweitert werden, eine Anpassung von den bereits bestehenden Funktionen darf nicht erfolgen. Alle Funktionen sollen rein im Backend implementiert werden, Grouping / Sorting etc. darf nicht im Frontend implementiert werden.
 

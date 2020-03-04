@@ -1,5 +1,7 @@
 # Probeaufgabe 1 - TreeView
 
+[Click here to switch to english](README.en-US.md)
+
 In einer WebApp soll eine TreeView Komponente implementiert werden. Die Komponente soll hierarchisch aufgebaute Daten direkt im Frontend anzeigen mit Hilfe der Library [jsTree](https://www.jstree.com/docs).
 
 Es exisitert bereits ein [Service](Services/DataService.cs), um Testdaten abrufen zu können. Der [Service](Services/DataService.cs) liefert die Daten in einer flachen Hierarchie, es besteht keine Child-Parent Realationship. Alle zurückgelieferten Daten sind Instanzen der Klasse [DataModel](Models/DataModel.cs).
